@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 
 import com.gmail.tarekmabdallah91.news.R;
-import com.gmail.tarekmabdallah91.news.application.MyApplication;
 import com.gmail.tarekmabdallah91.news.data.sp.SharedPreferencesHelper;
 import com.gmail.tarekmabdallah91.news.views.articlesFragment.ArticlesFragment;
 import com.gmail.tarekmabdallah91.news.views.bases.BaseActivity;
@@ -25,7 +24,7 @@ public class SectionActivity extends BaseActivity {
 
     @Override
     protected void initiateValues() {
-        fragment = ((MyApplication) getApplication()).getSectionActivityComponent().getArticlesFragment();
+        fragment = ArticlesFragment.getInstance();
     }
 
     @Override

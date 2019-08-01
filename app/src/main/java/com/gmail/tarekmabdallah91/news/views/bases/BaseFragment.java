@@ -46,7 +46,6 @@ public abstract class BaseFragment extends Fragment implements ListItemClickList
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        setFragmentComponent();
         initiateValues();
         if (null == savedInstanceState) {
             setActivityWhenSaveInstanceStateNull();
@@ -62,10 +61,6 @@ public abstract class BaseFragment extends Fragment implements ListItemClickList
         };
         if (null != errorIV) errorIV.setOnClickListener(onClickListener);
         if (null != errorTV) errorTV.setOnClickListener(onClickListener);
-    }
-
-    public void setFragmentComponent() {
-
     }
 
     @Override

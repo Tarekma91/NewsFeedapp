@@ -13,7 +13,6 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:name=".application.MyApplication"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
         <activity
             android:name="com.gmail.tarekmabdallah91.news.views.mainSection.MainSectionActivity"

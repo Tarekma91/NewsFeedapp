@@ -16,7 +16,7 @@
  *
  */
 
-package com.gmail.tarekmabdallah91.news.views.articlesFragment.paging.diAdapter;
+package com.gmail.tarekmabdallah91.news.views.articlesFragment.paging;
 
 import android.arch.paging.PagedListAdapter;
 import android.content.Context;
@@ -57,18 +57,15 @@ public class ItemAdapter extends PagedListAdapter<Article, RecyclerView.ViewHold
     OnArticleClickListener listener;
     private NetworkState networkState;
     ListItemClickListener itemClickListener;
-//    private Map<Integer, ItemAdapterViewHolderFactory> viewHolderFactories;
 
     public ItemAdapter() {
         super(DIFF_CALLBACK);
-//        this.viewHolderFactories = viewHolderFactories;
     }
 
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         this.context = parent.getContext();
-//        return viewHolderFactories.get(viewType).createViewHolder(parent);
         LayoutInflater layoutInflater = LayoutInflater.from(context);
         View view;
         if (viewType == R.layout.item_article) {
